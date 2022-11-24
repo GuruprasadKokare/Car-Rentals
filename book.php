@@ -1,0 +1,308 @@
+<html>
+<head>
+  <title>Booking</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+  <!-- CSS only -->
+  <link rel="stylesheet" href="style1.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="bookstyle.css">
+  </head>
+
+<body>
+    
+ <!--Navbar--> <nav class="navbar fixed-top bg-light" style="margin-top: 2px;">
+      <div class="container-fluid">
+
+<div class="position-sticky"> <a class="navbar-brand" href="./index.html">
+    <img src="./source/l1-removebg-preview.png" alt="logo" width="45%" class="hide"
+      style="margin-left:120%;"></a></div>
+
+
+<button class="navbar-toggler right" type="button" data-bs-toggle="offcanvas"
+  data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+  <span class="navbar-toggler-icon "></span>
+</button>
+
+<div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasWithBothOptions"
+  aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header ">
+
+    <h5 class="offcanvas-title fnt" id="offcanvasWithBothOptionsLabel">
+      <img src="./source/l2.png" alt="logo" width="95%" style="margin-left: 14%;">
+    </h5>
+    <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+
+  </div>
+  <div style="margin-left: 10px; margin-right: 15px;">
+    <form action="search">
+      <input class="input-field " id="search" type="search" placeholder="Search" aria-label="Search">
+      <button class="butn search-btn button-size-lg" type="submit">Search</button>
+    </form>
+  </div>
+  <div class="offcanvas-body contain">
+    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="./index2.html"> Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./book.html">Rent Now</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./contact.html">Contact us</a>
+      </li>
+      <li class="nav-item dropdown ">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          About
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">About us</a></li>
+          <li><a class="dropdown-item" href="#">Services</a></li>
+          <li><a class="dropdown-item" href="./location.html">Locations</a></li>
+          <li><a class="dropdown-item" href="./faq.html">FAQ's</a></li>
+        </ul>
+      </li>
+    </ul>
+    <!--  <img src="./source/4959.jpg" alt="logo" width="340px" height="130px" > -->
+    <a href="./index.html">
+      <button class="butn btn-primary sign button-size-md" onclick="myFunction()">Log out</button>
+    </a>
+    <script>
+      function myFunction() {
+        alert("LOGING OFF CLICK 'OK' ");
+        location.href = "index.html";
+      }
+    </script>
+  </div>
+</div>
+</nav>
+<!--Navbar
+
+    
+<div class="background-image" style="margin-top: 6%;">
+    <div class=" form">
+      <form class="row g-4"  >
+        <div class="col-md-4" >
+          <label for="validationDefault01" class="form-label">First Name</label>
+          <div class="input-field" >
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id="validationDefault01" required placeholder="First Name"  />
+          </div>
+        </div>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        <div class="col-md-4" >
+          <label for="validationDefault02" class="form-label">Last Name</label>
+          <div class="input-field">
+            <i ></i>
+            <input type="text" id="validationDefault02" required placeholder="Last Name" />
+          </div>
+        </div>
+
+        <div class="col-md-4" >
+          <label for="inputPassword4" class="form-label">Contact Number</label>
+          <div class="input-field">
+            <i class="fa-solid fa-phone"></i>
+            <input type="tel" placeholder="+91 9090909090"  maxlength="11" required />
+          </div>
+        </div>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <div class="col-md-4" >
+          <label for="validationDefault04" class="form-label">Driving Licence No.</label>
+          <div class="input-field">
+            <i class="fa-solid fa-id-card"></i>
+            <input type="tel" placeholder="MH11 20210006871" maxlength="15" id="validationDefault04" required/>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <label for="validationDefault05" class="form-label">Date of Pick up</label>
+          <div class="input-field">
+            <i></i>
+            <input type="date" max="2023-01-01" onfocus="this.min=new Date().toISOString().split('T')[0]" />
+          </div>
+         </div>
+
+        <div class="col-md-2">
+          <label for="validationDefault06" class="form-label">Pick up TIME</label>
+          <div class="input-field">
+            <i></i>
+            <input type="time" placeholder="Time" id="validationDefault06" required/>
+          </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="col-md-3">
+          <label for="validationDefault07" class="form-label">Date of Drop</label>
+          <div class="input-field">
+            <i></i>
+            <input type="date" max="2023-01-01" onfocus="this.min=new Date().toISOString().split('T')[0]" />
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <label for="validationDefault08" class="form-label">Time of Drop</label>
+          <div class="input-field">
+            <i></i>
+            <input type="time" placeholder="Time" id="validationDefault08" required/>
+          </div>
+        </div>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+         <div class="  col-md-5">
+          <label for="validationDefault09" class="form-label">Select Car Category</label>
+        <select class="input-field" id="validationCustom09" required>
+          <div class="bord">
+          <option selected disabled value="CarCategory">Choose...</option>
+          
+          <option>ALL</option>
+          <option>Small cars</option>
+          <option>Full Size SUV</option>
+          <option>Large SUV</option>
+          <option>Premium</option>
+          <option>XUV</option>
+          <option>Off Road vehicles</option>          
+        </select></div>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <div class=" col-md-5">
+          <label for="validationCustom10" class="form-label">Select Car</label>
+          <select class="input-field" id="validationCustom10" required>
+            <div class="bord">
+          <option selected disabled value="Car">Choose...</option>
+          <option>Hyundai i20</option>
+          <option>Tata Nexon</option>
+          <option>Tata Altroz</option>
+          <option>Creta SUV</option>
+          <option>Mahindra Scorpio</option>
+          <option>Audi Premium </option>
+          <option>MG Hector</option>
+          <option>Ertiga XUV</option>
+          <option>Mahindra Thar</option>
+          
+        </select></div>
+     
+        <div class="col-md-5 ">
+          <label for="validationCustom11" class="form-label">Pick up Location</label>
+          <select class="input-field" id="validationCustom11" required>
+            <div class="bord">
+              <option selected value="Pune">Choose...</option>
+              <option>Swargate, Pune</option>
+              <option>Hadpsar, Pune</option>
+              <option>Shivaji Nagar, Pune</option>
+              <option>Boriwali, Mumbai</option>
+              <option>Thane</option>
+              <option>Navi Mumbai</option>
+              <option disabled>Wagholi
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; coming soon
+              </option>
+              
+            </div>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid City.
+          </div>
+
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="col-md-5">
+          <label for="validationCustom12" class="form-label">Drop Location</label>
+          <select class="input-field" id="validationCustom12 drop-off" required>
+            <option selected disabled value="Area">Choose...</option>
+
+            <option>Swargate, Pune</option>
+            <option>Hadpsar, Pune</option>
+            <option>Shivaji Nagar, Pune</option>
+            <option>Thane</option>
+            <option>Navi Mumbai</option>
+            <option disabled>Wagholi
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; coming soon</option>
+            
+
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid City.
+          </div>
+        </div>
+
+        <div class="col-12">
+       <!--   <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" id="check" for="gridCheck">
+              Drop off at Pick up Location
+            </label>
+          </div>-->
+          <div class="check-box" >
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="gridCheck">
+                Accept all <a href="./source/Terms&Conditions.pdf" class=""> T&C
+                    <i class="fa-solid fa-file-invoice tac"></i></p></a>
+            </label>
+        </div></div>
+        
+
+        <div class="d-grid gap-2 col-4">
+          <button type="submit" class="butn button-size-lg" id="book-btn" data-bs-toggle="modal"
+            data-bs-target="#success-submit" >
+            <h5 class="md-4" style="margin-top: 8px;">Book Now</h5>
+          </button>
+        </div>
+
+        
+      </form>
+    </div><br>
+  </div>
+
+  <hr class="my-3" />
+  <!--Form-->
+
+<!-- Modal -->
+<div class="modal fade " id="success-submit" tabindex="-1" aria-labelledby="success-submit" aria-hidden="true">
+  <div class="modal-dialog modal-size">
+    
+      <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Well done!</h4>
+        <p>You have successfully booked this Car for Rent. </p>
+        <hr>
+        <p class="mb-0">Thank you for believing in us, hope we can deliver the best to you. <br> Looking for a lasting association.</p>
+      
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./script1.js"></script>
+</body>
+
+</html>

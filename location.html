@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations</title>
+
+    <link rel="stylesheet" href="./locstyle.css">
+    <link rel="stylesheet" href="./navstyle.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">   
+</head>
+
+<body class="bg-light fnt">
+    <!--Navbar-->
+    <nav class="navbar fixed-top bg-light" style="margin-top: 2px;">
+        <div class="container-fluid" style="justify-content: end;">
+  
+          <a class="navbar-brand" href="./index.html" style="margin-right: 30%; margin-left:0;">
+              <img src="./source/l1-removebg-preview.png" alt="logo" class="hide"></a>
+  
+  
+          <button class="navbar-toggler right" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" style="position:absolute;">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+  
+          <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header ">
+  
+              <h5 class="offcanvas-title fnt" id="offcanvasWithBothOptionsLabel">
+                <img src="./source/l2.png" alt="logo" width="95%" style="margin-left: 14%;">
+              </h5>
+              <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+  
+            </div>
+            <div>
+            <div style="margin-left: 10px; margin-right: 15px;">
+              <form action="search" style="margin-bottom: 0px;">
+                <input class="input-field" id="search" type="search" placeholder="Search" aria-label="Search" style="height: 40px;">
+                <button class="butn search-btn" type="submit" style="margin-left: 68%; height: 30%;">Search</button>
+              </form>
+            </div>
+            <div class="offcanvas-body contain" style="padding-top: 0;">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 nav-list ">
+  
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html"> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-target="#staticBackdrop" data-bs-toggle="modal">Rent Now</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact us</a>
+                </li>
+                <li class="dropdown about">
+                    
+                  <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    About
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">About us</a></li>
+                    <li><a class="dropdown-item" href="#">Services</a></li>
+                    <li><a class="dropdown-item" href="./location.html">Locations</a></li>
+                    <li><a class="dropdown-item" href="./faq.html">FAQ's</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <!--  <img src="./source/4959.jpg" alt="logo" width="340px" height="130px" > -->
+              <a href="./Login.html">
+                <button class="butn btn-primary sign button-size-md">Log in</button>
+              </a>
+              <a href="./signup.html">
+                <button class="butn sign button-size-md">Sign Up</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--Navbar-->
+
+      <div class="box">
+        <div class=" box-1">
+            <h2 class="head">Station Locator - Find ApniCar Stations Near YOU</h2>
+        </div>
+
+        <form class="box-2  " >
+            <input type="search" placeholder="search" class="srch-box "/>
+            <button class="srch-btn butn ">Search</button>
+        </form>
+
+        <div class="coll1 ">
+        <div class="loc-box " style="margin-right: -200px;">
+            <h5 class="card-head">ApniCar Station Swargate</h5>
+            <p class="other-txt"> Pune-Satara Road, Swargate -411042
+            <br>
+            <a href="tel:+917020640002" class="link-clr">(917) 345-2415</a>
+            <br>
+            M-F 8-8 Sat 7-7 Sun 7-10
+            <br>
+            0.19mi
+        </p>
+        <button class="buttn view-btn btn-pos">View on Map</button>
+        <button class="buttn view-btn btn-pos">Directions</button>
+        </div>
+
+        <div class="loc-box ">
+          <h5 class="card-head">ApniCar Station Hadpsar</h5>
+          <p class="other-txt"> Near Gadital, Hadpsar -411028
+          <br>
+          <a href="tel:+917020640002" class="link-clr">(917) 345-2415</a>
+          <br>
+          M-F 8-8 Sat 7-7 Sun 7-10
+          <br>
+          1.80mi
+      </p>
+      <button class="buttn view-btn btn-pos">View on Map</button>
+      <button class="buttn view-btn btn-pos">Directions</button>
+      </div>
+
+      <div class="loc-box ">
+        <h5 class="card-head">ApniCar Station Shivaji Nagar</h5>
+        <p class="other-txt"> Shivaji Nagar, Pune -411003
+        <br>
+        <a href="tel:+917020640002" class="link-clr">(917) 345-2415</a>
+        <br>
+        M-F 8-8 Sat 7-7 Sun 7-10
+        <br>
+        0.19mi
+    </p>
+    <button class="buttn view-btn btn-pos">View on Map</button>
+    <button class="buttn view-btn btn-pos">Directions</button>
+    </div>
+
+    <div class="loc-box ">
+      <h5 class="card-head">ApniCar Station Boriwali</h5>
+      <p class="other-txt"> Boriwali, Mumbai-410001
+      <br>
+      <a href="tel:+917020640002" class="link-clr">(917) 345-2415</a>
+      <br>
+      M-F 8-8 Sat 7-7 Sun 7-10
+      <br>
+      0.19mi
+  </p>
+  <button class="buttn view-btn btn-pos">View on Map</button>
+  <button class="buttn view-btn btn-pos">Directions</button>
+  </div>
+
+  <div class="loc-box ">
+    <h5 class="card-head">ApniCar Station Thane</h5>
+    <p class="other-txt"> Thane, Thane-410005
+    <br>
+    <a href="tel:+917020640002" class="link-clr">(917) 345-2415</a>
+    <br>
+    M-F 8-8 Sat 7-7 Sun 7-10
+    <br>
+    0.19mi
+</p>
+<button class="buttn view-btn btn-pos">View on Map</button>
+<button class="buttn view-btn btn-pos">Directions</button>
+</div>
+
+</div>
+
+<div class="coll2 " >
+    
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30255.780221942117!2d73.96099986607844!3d18.575277247868033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c38275a673c5%3A0x368b6a8fa28346d!2sG%20H%20RAISONI%20College%20OF%20ENGINEERING%20AND%20Management%2C%20PUNE!5e0!3m2!1sen!2sin!4v1668433771751!5m2!1sen!2sin" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+    </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

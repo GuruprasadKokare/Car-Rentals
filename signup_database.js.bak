@@ -1,0 +1,64 @@
+//import firebase from "firebase";
+  
+  
+var admin = require("firebase-admin");
+
+var serviceAccount = require("path/to/serviceAccountKey.json");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://car-rent-signup-default-rtdb.firebaseio.com"
+});
+
+  var firebaseConfig = {	
+    apiKey: "AIzaSyDe9nWE21u6NNaqRhzF3kHsV1SdRADYLyI",
+    authDomain: "car-rent-signup.firebaseapp.com",
+    databaseURL: "https://car-rent-signup-default-rtdb.firebaseio.com",
+    projectId: "car-rent-signup",
+    storageBucket: "car-rent-signup.appspot.com",
+    messagingSenderId: "724644538838",
+    appId: "1:724644538838:web:ead23974c1c60ca1b45c77"
+  };
+  /*
+  	
+  const app=initializeApp(firebaseConfig);
+  const database=getDatabase(app);
+  const auth=getAuth();
+  */
+ firebase.initializeApp(firebaseConfig);
+  
+ // var carrentsignup =firebase.database().ref("car-rent-signup");
+  /*
+  document.getElementById("car-rent-signup").addEventListener("submit",submitForm);
+  
+  function submitForm(e)
+  {
+	  
+	  e.preventDefault();
+	  
+	  var name= getElementVal('name');
+	  var emailid=getElementVal('emailid');
+	  var password1=getElementVal('password1');
+	  
+	  saveMessages(name,emailid,password1);
+	  
+	  
+
+  }
+  
+  const saveMessages =(name,emailid,password1)=>{
+	  
+	  var newcarrentsignup=car-rent-signupDB.push();
+	  newcar-rent-signup.set({
+		  name:name,
+		  emailid:emailid,
+		  password1:password1
+		  
+	  })
+  }
+  
+  const getElementVal=(id)=>{
+	  
+	  return document.getElementById(id).value;
+  }
+  */
