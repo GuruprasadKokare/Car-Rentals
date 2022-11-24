@@ -33,12 +33,12 @@ nav {
 }
 
 /* Carousel styling */
-#introCarousel,
+/* #introCarousel,
 .carousel-inner,
 .carousel-item,
 .carousel-item.active {
   height: 80%;
-}
+} */
 
 .carousel-item:nth-child(1) {
   background-image: url('./source/back03.svg');
@@ -130,6 +130,36 @@ nav {
   .carousel-item,
   .carousel-item.active {
     height: 100%;
+  }
+  .carslider{
+    width: 98%;
+  }
+}
+
+@media (max-width: 992px) {
+
+
+  .hei{
+    height: 35%;
+  }
+
+  .slick-list{
+    height: 550px;
+  }
+  .card{
+    height: 550px;
+  }
+  .hidden{
+    visibility: hidden;
+  }
+
+  .slick-slide{
+    height: 550px;
+  }
+
+  .carslider{
+    width: 100%;
+    height: 550px;
   }
 }
 

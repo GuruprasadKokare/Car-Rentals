@@ -63,7 +63,7 @@
               <button class="butn search-btn" type="submit">Search</button>
             </form>
           </div>
-          <div class="offcanvas-body contain">
+          <div class="offcanvas-body contain" >
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 
               <li class="nav-item">
@@ -73,7 +73,7 @@
                 <a class="nav-link" data-bs-target="#staticBackdrop" data-bs-toggle="modal">Rent Now</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact us</a>
+                <a class="nav-link" data-bs-toggle="modal">Contact us</a>
               </li>
               <li class="nav-item dropdown ">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -81,10 +81,10 @@
                   About
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">About us</a></li>
-                  <li><a class="dropdown-item" href="#">Services</a></li>
-                  <li><a class="dropdown-item" href="./location.html">Locations</a></li>
-                  <li><a class="dropdown-item" href="./faq.html">FAQ's</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal">About us</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal">Services</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal">Locations</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal">FAQ's</a></li>
                 </ul>
               </li>
             </ul>
@@ -105,7 +105,7 @@
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
       <!-- Inner -->
-      <div class="carousel-inner">
+      <div class="carousel-inner hei">
 
 
         <!-- Single item1 -->
@@ -367,17 +367,17 @@
   <!-- <hr class="my-3"> -->
 
   <!--Card slider-->
-  <div class=" text-center text-black carslider " style="cursor:default; width: 98%; ">
+  <div class=" text-center text-black carslider " style="cursor:default;  ">
 
     <!--Card-1 Small mini i20-->
-    <div class="card bg-1">
+    <div class="card bg-1" >
       <img src="./source/car4.png" class="card-img-top" alt="Hyundai i20" style="margin-top: 15px; ">
       <div class="card-body">
         <h5 class="card-title text-center text-bold">Small: Mini</h5>
         <p class="card-text">Small cars are fuel-efficient and fun-to drive. Save money on rentals of economy and
           compact cars.</p>
 
-        <ul class="pagination bg-white text-black" style="max-width: 100%;">
+        <ul class="pagination bg-white text-black hidden" style="max-width: 100%;">
           <li class="page-item " data-bs-toggle="tooltip" data-bs-placement="bottom"
             data-bs-title="Capacity: 4 persons">
             <div class="item">
@@ -409,7 +409,7 @@
         <h5 class="card-title text-center text-bold">Full Size: SUV EV/Petrol</h5>
         <p class="card-text">Full size EV is perfect for you if you are planning trips in between 300km-400km</p><br>
 
-        <ul class="pagination  text-black">
+        <ul class="pagination  text-black hidden">
           <li class="page-item " data-bs-toggle="tooltip" data-bs-placement="bottom"
             data-bs-title="Max Capacity : 5 persons">
             <div class="item img-fluid">
@@ -442,7 +442,7 @@
         <p class="card-text">Sport utility vehicle will be the best car for Your choice, if You are planning to visit
           countryside. Big spacious vehicles. </p>
 
-        <ul class="pagination  text-black">
+        <ul class="pagination  text-black hidden">
           <li class="page-item " data-bs-toggle="tooltip" data-bs-placement="bottom"
             data-bs-title="Max Capacity : 5 persons">
             <div class="item img-fluid">
@@ -474,7 +474,7 @@
         <h5 class="card-title text-center text-bold">Large: SUV</h5>
         <p class="card-text">A car for Your business trip and bigger comfort. This Car can carry maximum Luggage and
           maximum no. of people</p>
-        <ul class="pagination  text-black">
+        <ul class="pagination  text-black hidden">
           <li class="page-item " data-bs-toggle="tooltip" data-bs-placement="bottom"
             data-bs-title="Max Capacity : 7 persons">
             <div class="item img-fluid">
@@ -512,7 +512,7 @@
           just a luxury trip. Be stylish and elegant
           wherever you go.
         </p>
-        <ul class="pagination ">
+        <ul class="pagination hidden">
           <li class="page-item " data-bs-toggle="tooltip" data-bs-placement="bottom"
             data-bs-title="Capacity: 4 persons">
             <div class="item img-fluid">
@@ -543,7 +543,7 @@
       <div class="card-body">
         <h5 class="card-title text-center text-bold">Standard: Medium Size</h5>
         <p class="card-text">A car for Your business trip and bigger comfort.</p><br>
-        <ul class="pagination  text-black">
+        <ul class="pagination  text-black hidden">
           <li class="page-item " data-bs-toggle="tooltip" data-bs-placement="bottom"
             data-bs-title="Max Capacity : 5 persons">
             <div class="item img-fluid">
@@ -576,7 +576,7 @@
         <p class="card-text">Sport utility vehicle will be the best car for Your choice, if You are planning do off-road
           drives. Big spacious vehicles. </p>
 
-        <ul class="pagination  text-black">
+        <ul class="pagination  text-black hidden">
           <li class="page-item " data-bs-toggle="tooltip" data-bs-placement="bottom"
             data-bs-title="Max Capacity : 4 persons">
             <div class="item img-fluid">
@@ -608,7 +608,7 @@
         <h5 class="card-title text-center text-bold">Large: XUV</h5>
         <p class="card-text">A car for Your long trips and bigger comfort. This Car can carry maximum Luggage and
           maximum no. of people</p>
-        <ul class="pagination  text-black">
+        <ul class="pagination  text-black hidden">
           <li class="page-item " data-bs-toggle="tooltip" data-bs-placement="bottom"
             data-bs-title="Max Capacity : 7 persons">
             <div class="item img-fluid">
