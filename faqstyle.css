@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body{
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+background-image: url(./source/faqback.svg);
+background-repeat: no-repeat;
+background-attachment:scroll;
+background-size: cover;
+}
+
+
+
+/* .backgrnd::before{
+    content: '';
+    background-image: linear-gradient(-45deg, rgb(3, 137, 255) 50%, blue 100%);
+    background-position: center;
+    
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 60%;
+    right: 60%;
+    top: 40%;
+    
+    
+}
+
+.backgrnd2::before{
+    content: '';
+    background-image: linear-gradient(-45deg, rgb(3, 137, 255) 50%, blue 100%);
+    background-position: center;
+    background-attachment: fixed;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 60%;
+    left: 60%;
+    bottom: 40%;
+} */
+ 
+.faq-body{
+    margin-top: 6%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+
+.heading{
+    font-weight: 600;
+    margin-bottom: 3%;
+    color: #f0f0f0;
+}
+

@@ -1,0 +1,38 @@
+<?php
+include("config.php");
+include("firebaseRDB.php");
+
+$username=$_POST['username'];
+$password=$_POST['password'];
+
+if($username=""){
+
+echo "Username is required!!";
+
+}
+else if($password==""){
+    echo"Password is required!!"
+
+}
+else{
+
+    $rdb= new firebaseRDB($databaseURL);
+    $retrieve=$rdb=>$retrieve("/user","username","EQUAL",$username);
+
+    $data=json_decode($retrieve,l);
+
+    if(!isset($data['username'])){
+            echo "Username is note registered";
+
+
+    }else if($data['password']!=$password)
+    {
+        echo"Invalid password";
+
+
+    }else{
+        echo"Login Success";
+    }
+    
+}
+?>

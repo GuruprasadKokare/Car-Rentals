@@ -1,0 +1,822 @@
+<html>
+
+<head>
+  <title>Apnicar.com</title>
+
+  <!-- CSS only -->
+  <div> 
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </div>
+</head>
+
+<body class="bg-light text-black">
+
+  <header>
+    <!--Navbar-->
+    <nav class="navbar fixed-top bg-light" style="margin-top: 2px;">
+      <div class="container-fluid">
+
+        <div class="position-sticky"> <a class="navbar-brand" href="./index.html">
+            <img src="./source/l1-removebg-preview.png" alt="logo" width="45%" class="hide"
+              style="margin-left:120%;"></a></div>
+
+
+        <button class="navbar-toggler right" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasWithBothOptions"
+          aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header ">
+
+            <h5 class="offcanvas-title fnt" id="offcanvasWithBothOptionsLabel">
+              <img src="./source/l2.png" alt="logo" width="95%" style="margin-left: 14%;">
+            </h5>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+
+          </div>
+          <div style="margin-left: 10px; margin-right: 15px;">
+            <form action="search">
+              <input class="input-field " id="search" type="search" placeholder="Search" aria-label="Search">
+              <button class="butn search-btn button-size-lg" type="submit">Search</button>
+            </form>
+          </div>
+          <div class="offcanvas-body contain">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index2.html"> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./book.html">Rent Now</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact us</a>
+              </li>
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  About
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">About us</a></li>
+                  <li><a class="dropdown-item" href="#">Services</a></li>
+                  <li><a class="dropdown-item" href="./location.html">Locations</a></li>
+                  <li><a class="dropdown-item" href="./faq.html">FAQ's</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!--  <img src="./source/4959.jpg" alt="logo" width="340px" height="130px" > -->
+            <a href="./index.html">
+              <button class="butn btn-primary sign button-size-md" onclick="myFunction()">Log out</button>
+            </a>
+            <script>
+              function myFunction() {
+                alert("LOGING OFF PLEASE CLICK 'OK' !!!");
+                location.href = "index.html";
+              }
+            </script>
+          </div>
+        </div>
+    </nav>
+    <!--Navbar-->
+
+    <!-- Carousel wrapper -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <!-- Inner -->
+      <div class="carousel-inner">
+
+
+        <!-- Single item1 -->
+        <div class="carousel-item active" data-bs-interval="4000">
+          <div class="mask" style="background-color: none">
+            <div class="d-flex justify-content-start align-content-between h-100">
+              <div class="text-black  " style="margin-left:10% ; margin-top: 13%; margin-right: 45%; ">
+                <h1 class="mb-3 text-capitalize text-dark" style="color: rgba(0, 0, 0, 0.693);">
+                  <b> We are available for you 24X7<br>Experience Best Rental Cars <br>with ApniCar.com </b>
+                  </h2> <br>
+                  <a class="btn btn-primary btn-lg m-2" id="firstbtn" href="./book.html">Rent a
+                    Car</a>
+                  <a class="btn btn-light btn-lg m-2" href="./contact.html" role="button">Contact us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Single item2 -->
+        <div class="carousel-item" data-bs-interval="4000">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0);">
+            <div class="d-flex  align-items-center h-100 img-fluid">
+              <div class="text-black " style="margin-left:55% ;">
+                <h1 class="mb-3 text-capitalize" style="color: rgba(15, 15, 15, 0.911); ">
+                  <b> Take the Joy of Self Drive <br>with ApniCar.com </b>
+                </h1> <br>
+                <a class="btn btn-info btn-lg m-2" id="button" href="./book.html">Rent a Car</a>
+                <a class="btn btn-light btn-lg m-2" href="./contact.html" role="button">Contact us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item3 -->
+        <div class="carousel-item " data-bs-interval="4000">
+          <div class="mask" style="background-color: rgba(228, 228, 228, 0.199);">
+            <div class="d-flex justify-content-start align-content-between h-100">
+              <div class="text-black  " style="margin-left:65% ; margin-top: 10%; ">
+                <h1 class="mb-3 text-capitalize" style="color: rgb(255, 255, 255);  ">
+                  <b> Take Car on Rent,<br>Enjoy
+                    The Car <br>Just like its yours</b>
+                  </h2> <br>
+                  <a class="btn btn-info btn-lg m-2" id="btnn" href="./book.html">Rent a Car</a>
+                  <a class="btn btn-light btn-lg m-2" href="./contact.html" role="button">Contact us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item4 -->
+        <div class="carousel-item" data-bs-interval="4000">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0);">
+            <div class="d-flex align-items-center  h-100">
+              <div class="text-white " style="margin-left:6% ;  ">
+                <h1 class="mb-3 text-capitalize" style="color: rgba(255, 255, 255);  ">
+                  <b> Take the joy of Road trips</b></h2> <br>
+
+                  <a class="btn btn-info btn-lg m-2" href="./book.html" role="button">Rent a
+                    Car</button>
+                    <a class="btn btn-light btn-lg m-2" href="./contact.html" target="_blank" role="button">Contact us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item5 -->
+        <div class="carousel-item" data-bs-interval="4500">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.59);">
+            <div class="d-flex justify-content-center  h-100">
+              <div class="text-white text-center mb-auto text-capitalize" style="margin-top: 20%; ">
+                <h2 style="font-size: 350%;">We provide the Best Cars for Rent</h2><br>
+                <a class="btn btn-outline-light btn-lg m-2" href="#" role="button">Learn more about
+                  us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Inner -->
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+        <!--  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button> -->
+      </div>
+
+      <!-- Controls -->
+      <div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </div>
+    <!-- Carousel wrapper -->
+
+  </header>
+
+  <hr class="my-2 " />
+
+  <!--Main layout-->
+  <!--Form-->
+  <!-- <div class="back">
+    <div class="align-content-center justify-content-center align-items-center form" style="margin: 2% 30% 0% 5%; ">
+      <form class="row g-4">
+        <div class="col-md-3">
+          <label for="inputPassword4" class="form-label">Date of Pick up</label>
+          <div class="input-field">
+            <i></i>
+            <input type="date" placeholder="Date of Pick-up" />
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <label for="inputPassword4" class="form-label">Time of Pick up</label>
+          <div class="input-field">
+            <i></i>
+            <input type="time" placeholder="Time" />
+          </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="col-md-3">
+          <label for="text" class="form-label">Date of Drop</label>
+          <div class="input-field">
+            <i></i>
+            <input type="date" placeholder="Date" />
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <label for="inputPassword4" class="form-label">Time of Drop</label>
+          <div class="input-field">
+            <i></i>
+            <input type="time" placeholder="Time" />
+          </div>
+        </div>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+        
+     
+        <div class="col-md-4 ">
+          <label for="validationCustom04" class="form-label">Pick up Location</label>
+          <select class="input-field" id="validationCustom04" required>
+            <div class="bord">
+              <option selected value="Pune">Choose...</option>
+              <option>Swargate, Pune</option>
+              <option>Hadpsar, Pune</option>
+              <option>Shivaji Nagar, Pune</option>
+              <option>Boriwali, Mumbai</option>
+              <option>Thane</option>
+              <option>Navi Mumbai</option>
+              <option disabled>Wagholi
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; coming soon
+              </option>
+              <option>Other</option>
+            </div>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid City.
+          </div>
+
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="col-md-4">
+          <label for="validationCustom04" class="form-label">Drop Location</label>
+          <select class=" input-field" id="validationCustom04" required>
+            <option selected disabled value="Area">Choose...</option>
+
+            <option>Swargate, Pune</option>
+            <option>Hadpsar, Pune</option>
+            <option>Shivaji Nagar, Pune</option>
+            <option>Thane</option>
+            <option>Navi Mumbai</option>
+            <option disabled>Wagholi
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; coming soon</option>
+            <option>Other</option>
+
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid City.
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" id="check" for="gridCheck">
+              Drop off at Pick up Location
+            </label>
+          </div>
+        </div>
+
+        <div class="d-grid gap-2 col-4">
+          <button type="submit" class="butn btn-primary button-size-lg" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop" style="margin-right: 20%; width: 100%; margin-left: 90%; ">
+            <h5 class="md-4" style="margin-top: 8px;">Search Cars</h5>
+          </button>
+        </div>
+      </form>
+    </div><br>
+  </div> -->
+  <!--Form-->
+
+  <!-- <hr class="my-3" /> -->
+
+
+  <!-- Modal Alert-->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Please Log in</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Please Log In/ Sign UP to your account.
+        </div>
+        <div class="modal-footer">
+          <a href="./Login.html">
+            <button type="button" class="butn button-size-md" data-bs-dismiss="modal">Log in</button>
+          </a>
+          <a href="./signup.html">
+            <button type="button" class="butn button-size-md">Sign up</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--card-->
+
+  <!--Vehicles-->
+  <div class=" text-center mb-1 text-uppercase text-max-bold">
+    Vehicles
+  </div>
+  <!--vehicles-->
+
+  <!-- <hr class="my-3"> -->
+
+  <!--Card slider-->
+  <div class=" text-center text-black carslider " style="cursor:default; width: 98%; ">
+
+    <!--Card-1 Small mini i20-->
+    <div class="card bg-1">
+      <img src="./source/car4.png" class="card-img-top" alt="Hyundai i20" style="margin-top: 15px; ">
+      <div class="card-body">
+        <h5 class="card-title text-center text-bold">Small: Mini</h5>
+        <p class="card-text">Small cars are fuel-efficient and fun-to drive. Save money on rentals of economy and
+          compact cars.</p>
+
+        <ul class="pagination bg-white text-black" style="max-width: 100%;">
+          <li class="page-item " data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="Capacity: 4 persons">
+            <div class="item">
+              <i class="fa-solid fa-user largee"></i>
+            </div>
+          </li>
+          <li class="page-item " data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="Luggage : 2 Medium Size Bags">
+            <div class="item img-fluid">
+              <i class="fa-solid fa-suitcase largee"></i>
+            </div>
+          </li>
+          <li class="page-item" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="Car Condition: Medium">
+            <div class="item  img-fluid largee">
+              <i class="fa-solid fa-gear"></i>
+            </div>
+          </li>
+        </ul>
+        <button class="butn button-size-md d-grid col-12 mx-auto" onclick="window.location.href='book.html'">Book Now</button>
+      </div>
+    </div>
+
+    <!--Card-2 Full size SUV Nexon-->
+    <div class="card bg-light bg-2">
+      <img src="./source/car3.png" class="card-img-top img-fluid" alt="Tata Nexon" style="margin-top: 15px;">
+      <div class="card-body">
+        <h5 class="card-title text-center text-bold">Full Size: SUV EV/Petrol</h5>
+        <p class="card-text">Full size EV is perfect for you if you are planning trips in between 300km-400km</p><br>
+
+        <ul class="pagination  text-black">
+          <li class="page-item " data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="Max Capacity : 5 persons">
+            <div class="item img-fluid">
+              <i class="fa-solid fa-user largee"></i>
+            </div>
+          </li>
+          <li class="page-item" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="Luggage : 3 Medium Size Bags">
+            <div class="item img-fluid">
+              <i class="fa-solid fa-suitcase largee"></i>
+            </div>
+          </li>
+          <li class="page-item" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="Car Condition: Medium">
+            <div class="item  img-fluid">
+              <i class="fa-solid fa-gear largee"></i>
+            </div>
+          </li>
+        </ul>
+        <button class="butn button-size-md d-grid col-12 mx-auto" onclick="window.location.href='book.html'">Book Now</button>
+        
+      </div>
+    </div>
+
+    <!--Card-3 Full-size SUV Hyundai Creta-->
+    <div class="card bg-1">
+      <img src="./source/car2.png" class="card-img-top img-fluid" alt="Hyundai Creta" style="margin-top: 15px;">
+      <div class="card-body">
+        <h5 class="card-title text-center text-bold">Full Size: SUV</h5>
+        <p class="card-text">Sport utility vehicle will be the best car for Your choice, if You are planning to visit
+          countryside. Big spacious vehicles. </p>
+
+        <ul class="pagination  text-black">
+          <li class="page-item " data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="Max Capacity : 5 persons">
+            <div class="item img-fluid">
+              <i class="fa-solid fa-user largee"></i>
+            </div>
+          </li>
+          <li class="page-item" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="Luggage : 5 Medium Size Bags">
+            <div class="item img-fluid">
+              <i class="fa-solid fa-suitcase largee"></i>
+            </div>
+          </li>
+          <li class="page-item" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="Car Condition: A Grade">
+            <div class="item  img-fluid">
+              <i class="fa-solid fa-gear largee"></i>
+            </div>
+          </li>
+        </ul>
+        <button class="butn button-size-md d-grid col-12 mx-auto" onclick="window.location.href='book.html'">Book Now</button>
+      </div>
+    </div>
+
+    <!--Card-4 Large SUV Scorpio-->
+    <div class="card bg-light bg-2">
+      <img src="./source/car6.png" class="card-img-top img-fluid" alt="Mahindra Scorpio" style="margin-top:2%;">
+      <div class="card-body">
+        <h5 class="card-title text-center text-bold">Large: SUV</h5>
+        <p class="card-text">A car for Your business trip and bigger comfort. This Car can carry maximum Luggage and
+          maximum no. of people</p>
+        <ul class="pagination  text-black">
+          <li class="page-item " data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="Max Capacity : 7 persons">
+            <div class="item img-fluid">
+              <i class="fa-solid fa-user largee"></i>
+            </div>
+          </li>
+          <li class="page-item" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="Luggage : 10-12 Medium Size Bags">
+            <div class="item img-fluid">
+              <i class="fa-solid fa-suitcase largee"></i>
+            </div>
+          </li>
+          <li class="page-item" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="Car Condition: Medium">
+            <div class="item  img-fluid">
+              <i class="fa-solid fa-gear largee"></i>
+            </div>
+          </li>
+        </ul>
+        <button class="butn button-size-md d-grid col-12 mx-auto" onclick="window.location.href='book.html'">Book Now</button>
+      </div>
+    </div>
+
+    <!--1st container-->
+
+    <!--2nd container-->
+
+    <!--Card-5 Premium Audi-->
+    <div class="card bg-1">
+      <img src="./source/car8.png" class="card-img-top img-fluid" alt="Audi Q7" style="margin-top: 15px; ">
+      <div class="card-body">
+        <h5 class="card-title text-center text-bold">Large: Premium</h5>
+        <p class="card-text">Premium cars for you business needs or
+          just a luxury trip. Be stylish and elegant
+          wherever you go.
+        </p>
+        <ul class="pagination ">
+          <li class="page-item " data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="Capacity: 4 persons">
+            <div class="item img-fluid">
+              <i class="fa-solid fa-user largee"></i>
+            </div>
+          </li>
+          <li class="page-item " data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="Luggage : 2 Medium Size Bags">
+            <div class="item img-fluid">
+              <i class="fa-solid fa-suitcase largee"></i>
+            </div>
+          </li>
+          <li class="page-item" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="Last serviceing : 3 months ago">
+            <div class="item img-fluid">
+              <i class="fa-solid fa-gear largee"></i>
+            </div>
+          </li>
+        </ul>
+        <button class="butn button-size-md d-grid col-12 mx-auto" onclick="window.location.href='book.html'">Book Now</button>
+      </div>
+    </div>
+
+    <!--Card-6 Standard MG Hector-->
+    <div class="card bg-light bg-2">
+      <img src="./source/car10.png" class="card-img-top img-fluid" alt="MG Hector" style="margin-top: 15px;">
+      <div class="card-body">
+        <h5 class="card-title text-center text-bold">Standard: Medium Size</h5>
+        <p class="card-text">A car for Your business trip and bigger comfort.</p><br>
+        <ul class="pagination  text-black">
+          <li class="page-item " data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="Max Capacity : 5 persons">
+            <div class="item img-fluid">
+              <i class="fa-solid fa-user largee"></i>
+            </div>
+          </li>
+          <li class="page-item" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="Luggage : 3 Medium Size Bags">
+            <div class="item img-fluid">
+              <i class="fa-solid fa-suitcase largee"></i>
+            </div>
+          </li>
+          <li class="page-item" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="Last serviceing : 2 months ago">
+            <div class="item img-fluid">
+              <i class="fa-solid fa-gear largee"></i>
+            </div>
+          </li>
+        </ul>
+        <button class="butn button-size-md d-grid col-12 mx-auto" onclick="window.location.href='book.html'">Book Now</button>
+      </div>
+    </div>
+
+    <!--Card-7 Jeep-Thar-->
+    <div class="card bg-1">
+      <img src="./source/car11.png" class="card-img-top img-fluid" alt="Thar" style="margin-top: 15px; ">
+      <div class="card-body">
+        <h5 class="card-title text-center text-bold">Standard: Jeep</h5>
+        <p class="card-text">Sport utility vehicle will be the best car for Your choice, if You are planning do off-road
+          drives. Big spacious vehicles. </p>
+
+        <ul class="pagination  text-black">
+          <li class="page-item " data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="Max Capacity : 4 persons">
+            <div class="item img-fluid">
+              <i class="fa-solid fa-user largee"></i>
+            </div>
+          </li>
+          <li class="page-item" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="Luggage : 5 Medium Size Bags">
+            <div class="item img-fluid">
+              <i class="fa-solid fa-suitcase largee"></i>
+            </div>
+          </li>
+          <li class="page-item" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="Last serviceing : 6 months ago">
+            <div class="item img-fluid">
+              <i class="fa-solid fa-gear largee"></i>
+            </div>
+          </li>
+        </ul>
+        <button class="butn button-size-md d-grid col-12 mx-auto" onclick="window.location.href='book.html'">Book Now</button>
+      </div>
+    </div>
+
+    <!--Card-8 Large-XUV-->
+    <div class="card bg-light bg-2">
+      <img src="./source/car9.png" class="card-img-top img-fluid" alt="Innova" style="margin-top:5%; width: 97%;">
+      <div class="card-body">
+        <h5 class="card-title text-center text-bold">Large: XUV</h5>
+        <p class="card-text">A car for Your long trips and bigger comfort. This Car can carry maximum Luggage and
+          maximum no. of people</p>
+        <ul class="pagination  text-black">
+          <li class="page-item " data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="Max Capacity : 7 persons">
+            <div class="item img-fluid">
+              <i class="fa-solid fa-user largee"></i>
+            </div>
+          </li>
+          <li class="page-item" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="Luggage : 10-12 Medium Size Bags">
+            <div class="item img-fluid">
+              <i class="fa-solid fa-suitcase largee"></i>
+            </div>
+          </li>
+          <li class="page-item" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="Last serviceing : 3 months ago">
+            <div class="item img-fluid">
+              <i class="fa-solid fa-gear largee"></i>
+            </div>
+          </li>
+        </ul>
+        <button class="butn button-size-md d-grid col-12 mx-auto" onclick="window.location.href='book.html'">Book Now</button>
+      </div>
+    </div>
+
+  </div>
+  <!--Card Slider-->
+
+  <hr class="my-3">
+
+  <!--Table for features-->
+  <div style="margin: 2% 1% 3% 2%;">
+    <table class="table-responsive table-border">
+      <tr class="bg-theme ">
+        <th class="col-2 bg-4">
+          <img src="./source/pic1.png" alt="car logo" style="width:30%; margin-top: 3%;" class="float-start">
+          <p style="margin-left:25% ; margin-top: 6%;">Vehicles To <br>Meet Demands</p>
+        </th>
+
+
+        <th class="col-2 bg-5">
+          &nbsp;<img src="./source/wallet.png" alt="car logo" style="width: 15%; "
+            class="float-start table-logo-margin">
+          &nbsp;
+          <p class="table-head-align">Great Daily And <br> Hourly Rates</p>
+        </th>
+
+
+        <th class="col-2 bg-4">
+          &nbsp;<img src="./source/time1.png" alt="car logo" style="width: 20%;"
+            class="float-start table-logo-margin">&nbsp;
+          <p style="margin-left: 30%;">No Hidden Charges</p>
+        </th>
+
+        <th class="col-2 bg-5">
+          &nbsp;<img src="./source/time2.png" alt="car logo" style="width: 27%; margin-left: 6%;"
+            class="float-start">&nbsp;
+          <p style="margin-left:37% ; margin-top: -5%;">Real Time<br> Online Booking</p>
+        </th>
+
+
+        <th class="col-2 bg-4">
+          &nbsp;<img src="./source/secure.png" alt="car logo" style="width: 19%; margin-left: 5%; margin-top: 2%;"
+            class="float-start">&nbsp;
+          <p style="margin-left:30% ; margin-top: -5%;"> Clean Vehicles & <br>Many Extras </p>
+        </th>
+      </tr>
+      <tr class=" justify-content-center">
+        <td class="col-2 bg-6"> What are Your plans? Do You want to travel with Your family or friends, or do You need a
+          car for business trip or personal travels? You will be able to find the car most
+          suitable for You. </td>
+        <td class="col-2 bg-7"> You can go through all car rentals and compare prices and terms, and You will find that
+          we have new, affordable and comfortable cars from economic class up to premium. </td>
+        <td class="col-2 bg-6"> Our rental agreements are simple, easy to understand and without any sections with
+          hidden
+          terms</td>
+        <td class="col-2 bg-7"> Book simply, easy and fast! Or if you would like to receive our best offer for Your car
+          rental, just contact us.</td>
+        <td class="col-2 bg-6"> It is taken for granted that Rentalcars cars ar clean, well maintained and in perfect
+          condition. All for Your, Your family and friends safety. </td>
+      </tr>
+      <tr>
+        <td>
+          <br><br>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!--Table for features-->
+
+  <hr class="my-3">
+
+  <!--Special offers-->
+  <h2 class="text-center text-uppercase">Our Special Offers</h2>
+  <!--Special offers-->
+
+  <hr class="my-3">
+
+  <!-- <div class="card mb-5 offer-card" >
+    <div class="row g-lg-5">
+      <div class="col-5">
+        <img src="./source/offer7.jpg" class="img-fluid rounded-start" alt="offer1"
+          style="height: max-content; width: 120%;">
+      </div>
+      <div class="col-5">
+        <div class="card-body">
+          <h5 class="card-title fw-bold" style="font-size: 35;">Diwali Offer</h5>
+          <p class="card-text" style="font-size: 25;">Flat 10% Off on any ride </p>
+          <p class="card-text">
+            Book a car with
+            ApniCar.com for your Diwali trip offer is valid till 31st of Oct 2022
+          </p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+  <div class="card mb-5 offer-card">
+    <div class="row g-lg-5">
+      <div class="col-5">
+        <img src="./source/offer3.png" class="img-fluid rounded-start" alt="offer1"
+          style="height: fit-content; margin-top: 15%; margin-left: 5%;">
+      </div>
+      <div class="col-5">
+        <div class="card-body">
+          <h5 class="card-title fw-bold" style="font-size: 35;">Weekend Offer</h5>
+          <p class="card-text" style="font-size: 20;">Rs 2000 per day </p>
+          <p class="card-text">
+            Our special weekend prices are lower than usual! Book a car with ApniCar for your weekend trip. Pick up
+            from Friday
+            12:00 AM . Drop off till monday 12:00.
+          </p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- <img src="./source/car-driving-animate.svg" alt=""> -->
+
+  <!-- FOOTER -->
+  <footer class=" footer bg-footer text-dark row ">
+    <div class="t1-box col-3 " style=" margin-left: 3%; margin-top: 1%; ">
+      <div class="head">
+        <img src="./source/logooo-removebg-preview-crop.png" alt="Driving-car" class="imeg">
+      </div>
+    </div>
+
+    <div class="t2-box col-2 " style=" margin-left: 1%;  margin-top: 1%;">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">about us</a></li>
+        <li><a href="#">our services</a></li>
+        <li><a href="#">privacy policy</a></li>
+        <li><a href="#">affiliate program</a></li>
+      </ul>
+    </div>
+    <div class="col " style=" margin-left: 1%; margin-top: 1%; ">
+      <h4>Contact us</h4>
+      <ul>
+
+        <li> <a href="mailto: gurukokare2002@gmail.com"> <i class="fa-solid fa-envelope"> </i> infocar@apnicar.com </a></li> <br>
+        <li> <a href="tel: +917719830631" > <i class="fa-solid fa-phone"></i>  +91 9090252530 </li></a> <br>
+        <!-- <li><i class="fa-solid fa-location-dot"></i></li> -->
+
+      </ul>
+      <div>
+      </div>
+    </div>
+
+    <div class="col-4 " style=" margin-left: 2px; margin-top: 3%; ">
+
+
+      <div class="follow-us">
+        <h4 class="centr">follow us</h4>
+        <div class="social-media">
+          <a href="#" class="social-icon" id="facebook">
+            <i class="fab fa-facebook-f"></i>
+
+            <a href="#" class="social-icon" id="instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </a>
+          <a href="#" class="social-icon" id="twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="social-icon" id="google">
+            <i class="fab fa-google"></i>
+          </a>
+
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+  </footer>
+  <!-- FOOTER -->
+
+  </div>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./script1.js"></script>
+</body>
+
+</html>

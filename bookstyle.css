@@ -1,0 +1,82 @@
+
+.background-image{
+    background-image: url(./source/front-car-animate.svg);
+    background-repeat:no-repeat;
+    background-position: left;
+    background-size: 92vh;
+    background-position-y: 90%;
+    background-attachment: fixed;
+    
+  }
+
+  .bord{
+    height: 80%;
+  }
+
+ .link{
+    color: #333;
+    text-decoration-line: none;
+
+ }
+
+ .input-field{
+    max-width: 100%;
+    height: 50px;
+ }
+ 
+ /* #book-btn{
+    margin-right: 20%;
+    width: 340%;
+    max-width: 500%;
+    margin-left: 10%; 
+ } */
+
+ @media(min-width:992px)
+ {
+    #book-btn{
+        margin-left: 80%;
+        max-width: 100%;
+        width: 100%;
+    }
+    .form{
+        margin: 2% 1% 0% 40%;
+    }
+ }
+
+ @media(max-width:992px){
+    .form{
+        
+        margin-right: 15%;
+        margin-left: 20%;
+        margin-top: 15%;
+    }
+     #book-btn{
+    margin-right: 20%;
+    width: 340%;
+    max-width: 500%;
+    margin-left: 10%; 
+ }
+ }
+
+ .modal-size{
+    max-width: 100%;
+    width: max-content;
+ }
+
+ .buttn{
+    background-color: #3556ffb8;
+    cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 48px;
+  color: #f0f0f0;
+  
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  transition: all 0.5s;
+  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ }

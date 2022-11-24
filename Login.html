@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <!--CSS Only-->
+    <link rel="stylesheet" href="./loginstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+-->
+    <!--CSS Only-->
+</head>
+<body>
+    <a href="./index.html" style="background:local ; ">
+        <button class="butn fixed-top" id="btn-blue" style="margin: 1% 0 0% 88%;">Home</button>
+    </a>
+    <header> <!--Navbar
+        <nav class="navbar fixed-top  bg-light" style="margin-top: 2px;">
+          <div class="container-fluid">
+            
+            <div class="position-sticky"> <a class="navbar-brand" href="#"><img src="./source/49591.png" alt="logo" width="20%" style="margin-left: 3%;"></a></div>
+                   
+            <a href="./index.html" style="float:right;">
+                <button class="btn" id="btn-dark" style="margin: 1% 5px 0% 88%;">Home</button>
+            </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" style="float:right;">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                          <div class="offcanvas-header">
+                            <h5 class="offcanvas-title fnt" id="offcanvasWithBothOptionsLabel"><b>RentalCars.com</b></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  
+                          </div>
+                          <div style="margin-left: 10px; margin-right: 15px;">
+                          <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-primary" type="submit">Search</button>
+                          </form>
+                        </div>
+                          <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                              
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"> Home</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Rent Now</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Contact us</a>
+                              </li>
+                              <li class="nav-item dropdown "> 
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                 About 
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">About us</a></li>
+                                  <li><a class="dropdown-item" href="#">Services</a></li>
+                                  <li><a class="dropdown-item" href="#">Locations</a></li>
+                                  <li><a class="dropdown-item" href="#">FAQ's</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                            <img src="./source/4959.jpg" alt="logo" width="340px" height="130px" > 
+                        <a href="./Login.html"> 
+                          <button class="btn btn-primary sign" >Log in</button>
+                        </a>
+                        <a href="./signup.html">
+                            <button class="btn btn-outline-primary sign">Sign Up</button>
+                        </a>
+                          </div>
+                        </div>
+
+            </div>
+            
+        </nav>  -->
+          <!--Navbar--></header>
+
+    
+<div class="container">
+    
+    <div class="forms-container">
+        <div class="signin-signup">
+            <form action="login_action.php" method="post">
+                <h2 class="title">Sign in</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="email" placeholder="Email" name="email"  aria-describedby="inputGroupPrepend2" required/>
+                </div>
+                
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="password" name="password"/>
+                </div>
+                <input type="submit" class="butn solid " value="Log In" />
+                <p class="social-text">Or sign in with Social platforms</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon" id="facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon" id="twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" id="google">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-icon" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+  <!--  <div class="signup-signup">
+        <form action="#" class="sign-up-form">
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="UserName"/>
+            </div>
+            <div class="input-field">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Email"/>
+            </div>
+
+            <div class="input-field">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="password"/>
+            </div>
+            <input type="submit" class="btn solid" value="Log in"/>
+            <p class="social-text">Or sign up with Social platforms</p>
+            <div class="social-media">
+                <a href="#" class="social-icon" id="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-icon" id="twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-icon" id="google">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="#" class="social-icon" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+-->
+<div class="panels-container">
+    <div class="panel left-panel ">
+        <div class="content">
+            <h3>New Here?</h3>
+            <p>New user on CarRentals,
+                Please Sign up first
+            </p>
+            <a href="./signup.html">
+            <button class="butn transparent " id="sign-up-button">
+                Sign Up 
+            </button></a>
+        </div>
+        
+        <img src="source/login1.svg" alt="logo2" class="image" >
+    </div>
+<!--    <div class="panel right-panel">
+        <div class="content">
+            <h3>One of us</h3>
+            <p>New user on CarRentals,
+                Please Sign up first
+            </p>
+            <button class="btn transparent" id="sign-in-button">
+                Sign In 
+            </button>
+        </div>
+        <img src="source/log5.svg" alt="logo2" class="image" >
+    </div> -->
+</div>
+
+<!--Java Script-->
+    <script src="loginjs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<!--Java Script-->
+</body>
+
+</html>
