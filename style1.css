@@ -134,6 +134,9 @@ nav {
   .carslider{
     width: 98%;
   }
+  .foot-mar{
+    margin-top: 3%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -160,6 +163,26 @@ nav {
   .carslider{
     width: 100%;
     height: 550px;
+  }
+
+  .offer-card{
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .t3-box{
+    width: 100px;
+  }
+  .foot-mar{
+    margin-top: -20%;
+  }
+
+  .footer{
+    height: 11%;
+  }
+  .t1-box, .t2-box, .t3-box{
+    height: fit-content;
   }
 }
 
@@ -575,6 +598,17 @@ li {
     margin-left: 90%;
   }
 
+  .footer {
+    max-width: 100%;
+    width: 100%;
+    height: 32%;
+    padding-right: -10%;
+    font-family: 'poppins', sans-serif;
+    margin-left: 1%;
+  }
+
+ 
+
 }
 
 
@@ -607,6 +641,10 @@ li {
     max-width: 250%;
     width: 250%;
   }
+
+  .my-col{
+    width: 300px;
+  }
 }
 
 @media(max-width:552px) {
@@ -616,14 +654,7 @@ li {
   }
 }
 
-.footer {
-  max-width: 100%;
-  width: 100%;
-  height: 32%;
-  padding-right: -10%;
-  font-family: 'poppins', sans-serif;
-  margin-left: 1%;
-}
+
 
 .bg-footer {
 

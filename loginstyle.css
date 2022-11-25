@@ -27,6 +27,8 @@ input{
     top: 0;
     left: 0;
 }
+@media (min-width:992px) {
+    
 
 .container::before {
     content: '';
@@ -41,7 +43,38 @@ input{
     z-index: 6;
     transition: 1.8s ease-in-out;
 }
+}
 
+@media (max-width:992px) {
+    
+
+    .container::before {
+        content: '';
+        position: absolute;
+        height: 2000px;
+        width: 2000px;
+        top: -31%;
+        right: 30%;
+        background-image: linear-gradient(-45deg, #204cdb 0%, #2600bf 100%);
+        transform: translateY(-50%);
+        border-radius: 50%;
+        z-index: 6;
+        transition: 1.8s ease-in-out;
+    }
+
+    .panel{
+        margin-top: -260%;
+    }
+
+    .signin-signup{
+        width: 300px;
+        height: 200px;
+        margin-left: -40%;
+    }
+    .resp{
+        margin-left: -100px;
+    }
+    }
 form{
     display: flex;
     flex-direction: column;
